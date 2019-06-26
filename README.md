@@ -29,7 +29,7 @@ Comenzar
         PSig  Verdadero (nacimiento por reproducción)
       Sino
         PSig  Falso (ausencia)
-    FinSi
+      FinSi
   FinSi
 Fin 
 ~~~~
