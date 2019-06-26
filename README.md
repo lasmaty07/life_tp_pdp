@@ -18,19 +18,19 @@ contenido de la posición equivalente del estado anterior es el siguiente:
 ~~~~  
 Procedimiento PróximoPaso(UAnt : Posición; PAnt : Lógico; var PSig : Lógico)
 Comenzar
-Si (PAnt) entonces
-Si ((CantVecOcup(UAnt) &lt; 3) o (CantVecOcup(UAnt) &gt; 4)) entonces
-PSig  Falso (muerte por aislamiento o asfixia repectivamente)
-Sino
-PSig  Verdadero (supervivencia)
-FinSi
-Sino
-Si (CantVecOcup(UAnt) = 3) entonces
-PSig  Verdadero (nacimiento por reproducción)
-Sino
-PSig  Falso (ausencia)
-FinSi
-FinSi
+  Si (PAnt) entonces
+    Si ((CantVecOcup(UAnt) &lt; 3) o (CantVecOcup(UAnt) &gt; 4)) entonces
+      PSig  Falso (muerte por aislamiento o asfixia repectivamente)
+    Sino
+      PSig  Verdadero (supervivencia)
+    FinSi
+  Sino
+      Si (CantVecOcup(UAnt) = 3) entonces
+        PSig  Verdadero (nacimiento por reproducción)
+      Sino
+        PSig  Falso (ausencia)
+    FinSi
+  FinSi
 Fin 
 ~~~~
 
